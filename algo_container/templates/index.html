@@ -1,0 +1,37 @@
+<!doctype html>
+<title>ui_container</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+<nav>
+  <h1>ui_container</h1>
+  <hr>
+</nav>
+<section class="content">
+  {% if data %}
+  <table class="table">
+   <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Accuracy</th>
+      <th scope="col">Precision</th>
+      <th scope="col">Recall</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>{{ data['a'] }}</td>
+      <td>{{ data['b'] }}</td>
+      <td>{{ data['c'] }}</td>
+    </tr>
+   </tbody>
+  </table>
+  <div class="card">
+      <div class="card-body">
+        Matrice de Confusion du model : {{ data['d'] }}
+      </div>
+  </div>
+  {% else %}
+    <p>Sorry no data available</p>
+  {% endif %}
+</section>
