@@ -1,0 +1,13 @@
+version: '3'
+services:
+  algo_container:
+    build: algo_container/
+    ports:
+        - "5000:5000"
+  ui_container:
+    build: ui_container/
+    ports:
+        - "80:5000"
+    depends_on:
+        - algo_container
+    restart: on-failure
