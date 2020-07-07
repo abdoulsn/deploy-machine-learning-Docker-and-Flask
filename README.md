@@ -20,3 +20,5 @@ docker-compose up
 # connect to http://localhost for client
 # connect to http://localhost:5000 for server
 ```
+
+Authors: [Leila Palain-Saint-Agathe](https://github.com/abdoulsn) et [Abdoulaye Diallo](https://github.com/abdoulsn)
