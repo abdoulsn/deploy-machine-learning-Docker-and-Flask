@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Untracked files:
+algo_container/*.csv
+*.log
+
 # Distribution / packaging
 .Python
 build/
